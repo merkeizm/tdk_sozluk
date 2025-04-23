@@ -1,0 +1,18 @@
+[package]
+name = "tdk_sozluk"
+version = "0.1.0"
+edition = "2024"
+authors = ["merkeizm"]
+description = "TDK Sözlük API verilerini çeken bir Rust kütüphanesi"
+license = "Apache-2.0"
+repository = "https://github.com/merkeizm/tdk_sozluk"
+readme = "Readme.md"
+keywords = ["tdk", "sozluk", "turkce", "dictionary"]
+categories = ["text-processing", "api-bindings"]
+
+[dependencies]
+hyper = { version = "0.14", features = ["full"] }
+hyper-tls = "0.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
